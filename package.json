@@ -1,7 +1,7 @@
 {
   "name": "x.aliyun-email",
   "version": "1.0.0",
-  "description": "阿里云官方邮件发送SDK中并没有包含NodeJs版本，而目前很多线上应用的邮件系统一般通过*消息队列+NodeJs*进行处理，可以达到很高的吞吐率。",
+  "description": "阿里云邮件发送SDK",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

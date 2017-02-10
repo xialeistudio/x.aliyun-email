@@ -1,6 +1,6 @@
 #阿里云邮件发送
 阿里云官方邮件发送SDK中并没有包含NodeJs版本，而目前很多线上应用的邮件系统一般通过*消息队列+NodeJs*进行处理，可以达到很高的吞吐率。
-#调用方法
+##调用方法
 1. 安装
 
 ```bash
@@ -22,8 +22,7 @@ var defaultOptions = {
 };
 ```
 
-不覆盖则使用默认参数。
-3. 调用方法
+2. 调用方法
 
 ```javascript
 var email = require('x.aliyun-email');
@@ -39,4 +38,17 @@ email.singleSendMail('收件人email','邮件标题','邮件正文，支持html'
 }).catch(function(e) {
   console.error(e);
 });
+```
+
+##单元测试
+1. 设置环境变量
++ accessKeyId
++ accessKeySecret
++ accountName
++ fromAlias
+
+2. 执行测试
+
+```bash
+npm run test
 ```
