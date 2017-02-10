@@ -42,6 +42,7 @@ email.singleSendMail('收件人email','邮件标题','邮件正文，支持html'
 
 ##单元测试
 1. 设置环境变量
+
 + accessKeyId
 + accessKeySecret
 + accountName
